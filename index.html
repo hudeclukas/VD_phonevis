@@ -1,40 +1,83 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Icicle - Icicle tree with limited levels shown</title>
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+    <!-- CSS Files -->
+    <link type="text/css" href="css/base.css" rel="stylesheet" />
+    <link type="text/css" href="css/Icicle.css" rel="stylesheet" />
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <!--[if IE]><script language="javascript" type="text/javascript" src="js/extras/excanvas.js"></script><![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+    <!-- JIT Library File -->
+    <script language="javascript" type="text/javascript" src="js/jit/jit.js"></script>
 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+    <!-- Icicle phones file -->
+    <script language="javascript" type="text/javascript" src="js/Icicle.js"></script>
+</head>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-    </body>
+<body onload="init();">
+<div id="container">
+
+    <div id="left-container">
+
+        <div class="text">
+
+            <h4>
+                Icicle tree with limited levels shown
+            </h4>
+
+            <p>A static JSON tree representing a file system tree is loaded into
+                an Icicle Tree.</p>
+            <p>
+                <b>Left click</b> to set a node as root for the visualization.
+            </p>
+            <p>
+                <b>Right click</b> to set the parent node as root for the visualization.
+            </p>
+
+
+            <div>
+                <label for="s-orientation">Orientation: </label>
+                <select name="s-orientation" id="s-orientation">
+                    <option value="h" selected>horizontal</option>
+                    <option value="v">vertical</option>
+                </select>
+                <br>
+                <div id="max-levels">
+                    <label for="i-levels-to-show">Max levels: </label>
+                    <select  id="i-levels-to-show" name="i-levels-to-show" style="width: 50px">
+                        <option>all</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option selected="selected">3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <a id="update" href="#" class="theme button white">Go to Parent</a>
+
+        <div id="id-list"></div>
+
+
+        <div style="text-align:center;"><a href="js/Icicle.js">See the Example Code</a></div>
+    </div>
+
+    <div id="center-container">
+        <div id="infovis"></div>
+    </div>
+
+    <div id="right-container">
+
+        <div id="inner-details"></div>
+
+    </div>
+
+    <div id="log"></div>
+</div>
+</body>
 </html>
