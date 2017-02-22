@@ -1,0 +1,376 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [
+                                                {
+                                                    "name": "ZTE A261",
+                                                    "id": "zte_a261772745081"
+                                                }
+                                            ],
+                                            "name": "price: 0",
+                                            "id": "price:_0-1068132048"
+                                        }
+                                    ],
+                                    "name": "ram: -1.0 GB",
+                                    "id": "ram:_-1.0_gb-1132704571"
+                                }
+                            ],
+                            "name": "camera: 0.0 MP",
+                            "id": "camera:_0.0_mp85376450"
+                        }
+                    ],
+                    "name": "display: -1.0\"",
+                    "id": "display:_-1.0\"-669505872"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [
+                                                {
+                                                    "name": "ZTE Amigo",
+                                                    "id": "zte_amigo-150686734"
+                                                }
+                                            ],
+                                            "name": "price: 0",
+                                            "id": "price:_0882261250"
+                                        }
+                                    ],
+                                    "name": "ram: -1.0 GB",
+                                    "id": "ram:_-1.0_gb1557395144"
+                                }
+                            ],
+                            "name": "camera: 3.15 MP",
+                            "id": "camera:_3.15_mp334807664"
+                        }
+                    ],
+                    "name": "display: 3.2\"",
+                    "id": "display:_3.2\"1773757944"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [
+                                                {
+                                                    "name": "ZTE Anthem 4G",
+                                                    "id": "zte_anthem_4g-1219931889"
+                                                }
+                                            ],
+                                            "name": "price: 0",
+                                            "id": "price:_0633691665"
+                                        }
+                                    ],
+                                    "name": "ram: 0.0 GB",
+                                    "id": "ram:_0.0_gb-773362545"
+                                }
+                            ],
+                            "name": "camera: 5.0 MP",
+                            "id": "camera:_5.0_mp827407856"
+                        }
+                    ],
+                    "name": "display: 4.3\"",
+                    "id": "display:_4.3\"-441429782"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [
+                                                {
+                                                    "name": "ZTE X990",
+                                                    "id": "zte_x990-1533618858"
+                                                }
+                                            ],
+                                            "name": "price: 0",
+                                            "id": "price:_01287371986"
+                                        }
+                                    ],
+                                    "name": "ram: 0.0 GB",
+                                    "id": "ram:_0.0_gb1239748636"
+                                }
+                            ],
+                            "name": "camera: 2.0 MP",
+                            "id": "camera:_2.0_mp-168575169"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [
+                                                {
+                                                    "name": "ZTE Xiang",
+                                                    "id": "zte_xiang1246953415"
+                                                }
+                                            ],
+                                            "name": "price: 0",
+                                            "id": "price:_0-460633344"
+                                        }
+                                    ],
+                                    "name": "ram: 0.0 GB",
+                                    "id": "ram:_0.0_gb-1949790984"
+                                }
+                            ],
+                            "name": "camera: 3.2 MP",
+                            "id": "camera:_3.2_mp2105531437"
+                        }
+                    ],
+                    "name": "display: 2.5\"",
+                    "id": "display:_2.5\"-158696392"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [
+                                                {
+                                                    "name": "ZTE Avail",
+                                                    "id": "zte_avail551050108"
+                                                }
+                                            ],
+                                            "name": "price: 330",
+                                            "id": "price:_330861315742"
+                                        }
+                                    ],
+                                    "name": "ram: 0.0 GB",
+                                    "id": "ram:_0.0_gb647290039"
+                                }
+                            ],
+                            "name": "camera: 5.0 MP",
+                            "id": "camera:_5.0_mp-1564523410"
+                        }
+                    ],
+                    "name": "display: 3.5\"",
+                    "id": "display:_3.5\"-901810603"
+                }
+            ],
+            "name": "ZTE",
+            "id": "zte425364089"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [
+                                                {
+                                                    "name": "Lenovo A10-70 A7600",
+                                                    "id": "lenovo_a10-70_a7600414528138"
+                                                }
+                                            ],
+                                            "name": "price: 190",
+                                            "id": "price:_190-958279713"
+                                        }
+                                    ],
+                                    "name": "ram: 0.0 GB",
+                                    "id": "ram:_0.0_gb-1160925015"
+                                }
+                            ],
+                            "name": "camera: 5.0 MP",
+                            "id": "camera:_5.0_mp1561095873"
+                        }
+                    ],
+                    "name": "display: 10.1\"",
+                    "id": "display:_10.1\"-1716232065"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [
+                                                {
+                                                    "name": "Lenovo A7-30 A3300",
+                                                    "id": "lenovo_a7-30_a3300-279925780"
+                                                }
+                                            ],
+                                            "name": "price: 80",
+                                            "id": "price:_80-1551638348"
+                                        }
+                                    ],
+                                    "name": "ram: 0.0 GB",
+                                    "id": "ram:_0.0_gb-482089326"
+                                }
+                            ],
+                            "name": "camera: 2.0 MP",
+                            "id": "camera:_2.0_mp-722302076"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [
+                                                {
+                                                    "name": "Lenovo A7-50 A3500",
+                                                    "id": "lenovo_a7-50_a35001811023116"
+                                                }
+                                            ],
+                                            "name": "price: 120",
+                                            "id": "price:_1201865282443"
+                                        }
+                                    ],
+                                    "name": "ram: 0.0 GB",
+                                    "id": "ram:_0.0_gb-499969786"
+                                }
+                            ],
+                            "name": "camera: 5.0 MP",
+                            "id": "camera:_5.0_mp-1502209730"
+                        }
+                    ],
+                    "name": "display: 7.0\"",
+                    "id": "display:_7.0\"1834747107"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [
+                                                {
+                                                    "name": "Lenovo A60+",
+                                                    "id": "lenovo_a60+-1343169805"
+                                                }
+                                            ],
+                                            "name": "price: 70",
+                                            "id": "price:_701740206579"
+                                        }
+                                    ],
+                                    "name": "ram: 0.0 GB",
+                                    "id": "ram:_0.0_gb-2040665160"
+                                }
+                            ],
+                            "name": "camera: 2.0 MP",
+                            "id": "camera:_2.0_mp-1245859509"
+                        }
+                    ],
+                    "name": "display: 3.5\"",
+                    "id": "display:_3.5\"361509950"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [
+                                                {
+                                                    "name": "Lenovo A8-50 A5500",
+                                                    "id": "lenovo_a8-50_a55001215230018"
+                                                }
+                                            ],
+                                            "name": "price: 140",
+                                            "id": "price:_140-1753736292"
+                                        }
+                                    ],
+                                    "name": "ram: 0.0 GB",
+                                    "id": "ram:_0.0_gb-264980533"
+                                }
+                            ],
+                            "name": "camera: 5.0 MP",
+                            "id": "camera:_5.0_mp841993360"
+                        }
+                    ],
+                    "name": "display: 8.0\"",
+                    "id": "display:_8.0\"-874260172"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [
+                                                {
+                                                    "name": "Lenovo A Plus",
+                                                    "id": "lenovo_a_plus-1279627189"
+                                                }
+                                            ],
+                                            "name": "price: 0",
+                                            "id": "price:_01141053762"
+                                        }
+                                    ],
+                                    "name": "ram: 0.0 GB",
+                                    "id": "ram:_0.0_gb53992039"
+                                }
+                            ],
+                            "name": "camera: 5.0 MP",
+                            "id": "camera:_5.0_mp-389653659"
+                        }
+                    ],
+                    "name": "display: 4.5\"",
+                    "id": "display:_4.5\"944352062"
+                }
+            ],
+            "name": "Lenovo",
+            "id": "lenovo-967385755"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "children": [
+                                                {
+                                                    "name": "Acer Allegro",
+                                                    "id": "acer_allegro-57855384"
+                                                }
+                                            ],
+                                            "name": "price: 140",
+                                            "id": "price:_140224456712"
+                                        }
+                                    ],
+                                    "name": "ram: 0.0 GB",
+                                    "id": "ram:_0.0_gb-211558124"
+                                }
+                            ],
+                            "name": "camera: 5.0 MP",
+                            "id": "camera:_5.0_mp838534499"
+                        }
+                    ],
+                    "name": "display: 3.6\"",
+                    "id": "display:_3.6\"1212810205"
+                }
+            ],
+            "name": "Acer",
+            "id": "acer858397037"
+        }
+    ],
+    "name": "Phones",
+    "id": "phones-1317671608"
+}
