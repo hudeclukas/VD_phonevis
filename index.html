@@ -27,11 +27,10 @@
         <div class="text">
 
             <h4>
-                Icicle tree with limited levels shown
+                GSM-Arena phones and tablets with 5 attributes and name
             </h4>
 
-            <p>A static JSON tree representing a file system tree is loaded into
-                an Icicle Tree.</p>
+            <p>Ajax loaded local file with all phones parsed to InfoVis readable JSON format</p>
             <p>
                 <b>Left click</b> to set a node as root for the visualization.
             </p>
@@ -53,9 +52,19 @@
                         <option>all</option>
                         <option>1</option>
                         <option>2</option>
-                        <option selected="selected">3</option>
-                        <option>4</option>
+                        <option>3</option>
+                        <option selected="selected">4</option>
                         <option>5</option>
+                        <option>6</option>
+                    </select>
+                </div>
+                <div id="max-data">
+                    <label for="k-data-to-show">Data count: </label>
+                    <select  id="k-data-to-show" name="k-data-to-show" style="width: 60px; ">
+                        <option selected="selected">5</option>
+                        <option>100</option>
+                        <option>1000</option>
+                        <option>all</option>
                     </select>
                 </div>
             </div>
@@ -65,12 +74,10 @@
 
         <div id="id-list"></div>
 
-
-        <div style="text-align:center;"><a href="js/Icicle.js">See the Example Code</a></div>
     </div>
 
     <div id="center-container">
-        <div id="infovis"></div>
+        <div id="phones"></div>
     </div>
 
     <div id="right-container">

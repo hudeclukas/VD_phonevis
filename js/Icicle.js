@@ -31,6 +31,43 @@ var Log = {
 
 var icicle;
 
+function loadData(path) {
+    var json = null;
+    $.ajax({
+        'async': false,
+        'global': false,
+        'url': path,
+        'dataType': "json",
+        'success': function (data) {
+            json = data;
+        }
+    });
+    return json;
+}
+
+function setHeight(value) {
+    var phones = document.getElementById('phones');
+    var leftC = document.getElementById('left-container');
+    var centerC = document.getElementById('center-container');
+    var rightC = document.getElementById('right-container');
+
+    phones.style.height = value + 'px';
+    leftC.style.height = value + 'px';
+    centerC.style.height = value + 'px';
+    rightC.style.height = value + 'px';
+
+    var width = icicle.canvas.getSize().width;
+    icicle.canvas.resize(width, value);
+}
+
+function recomputeHeight() {
+    var adjacency = icicle.clickedNode.getAdjacency(icicle.json.id);
+    if (adjacency != null && adjacency.nodeTo.id == icicle.json.id ) {
+        var height = icicle.json.children.length * 20;
+        setHeight(height > 600 ? height : 600);
+    }
+}
+
 function init() {
     // left panel controls
     controls();
@@ -39,31 +76,19 @@ function init() {
     // var json = jQuery.getJSON("data/brandTree.json", function(json) {
     //     console.log(json); // this will show the info it in firebug console
     // });
-    var json = (function () {
-        var json = null;
-        $.ajax({
-            'async': false,
-            'global': false,
-            'url': "data/brandTree.json",
-            'dataType': "json",
-            'success': function (data) {
-                json = data;
-            }
-        });
-        return json;
-    })();
-    
+    var json = loadData("data/brandTree5.json");
     // end
+
     // init Icicle
     icicle = new $jit.Icicle({
         // id of the visualization container
-        injectInto: 'infovis',
+        injectInto: 'phones',
         // whether to add transition animations
         animate: animate,
         // nodes offset
         offset: 1,
         // whether to add cushion type nodes
-        cushion: false,
+        cushion: true,
         // do not show all levels at once
         constrained: true,
         levelsToShow: 4,
@@ -73,7 +98,7 @@ function init() {
             type: 'Native',
             // add positioning offsets
             offsetX: 20,
-            offsetY: 20,
+            offsetY: 10,
             // implement the onShow method to
             // add content to the tooltip when a node
             // is hovered
@@ -96,6 +121,9 @@ function init() {
                 if (node) {
                     //hide tips
                     icicle.tips.hide();
+                    if (icicle.clickedNode.id != icicle.json.id) {
+                        setHeight(600);
+                    }
                     // perform the enter animation
                     icicle.enter(node);
                 }
@@ -104,13 +132,13 @@ function init() {
                 //hide tips
                 icicle.tips.hide();
                 // perform the out animation
-                icicle.out();
+                jQuery.when(icicle.out()).then(recomputeHeight());
             }
         },
         // Add canvas label styling
         Label: {
             type: labelType, // "Native" or "HTML"
-            color: '#333',
+            color: '#170d0b',
             style: 'bold',
             size: 12
         },
@@ -153,7 +181,7 @@ function controls() {
     var jit = $jit;
     var gotoparent = jit.id('update');
     jit.util.addEvent(gotoparent, 'click', function () {
-        icicle.out();
+        jQuery.when(icicle.out()).then(recomputeHeight());
     });
     var select = jit.id('s-orientation');
     jit.util.addEvent(select, 'change', function () {
@@ -171,5 +199,30 @@ function controls() {
         }
         icicle.refresh();
     });
+    var data = jit.id('k-data-to-show');
+    jit.util.addEvent(data, 'change', function () {
+        var index = data.selectedIndex;
+        var json = null;
+        switch (index) {
+            case 0 :
+                json = loadData("data/brandTree5.json");
+                setHeight(600);
+                break;
+            case 1 :
+                json = loadData("data/brandTree100.json");
+                setHeight(json.children.length * 20);
+                break;
+            case 2 :
+                json = loadData("data/brandTree1000.json");
+                setHeight(json.children.length * 20);
+                break;
+            case 3 :
+                json = loadData("data/brandTree.json");
+                setHeight(json.children.length * 20);
+                break;
+        }
+        icicle.loadJSON(json);
+        icicle.refresh();
+    })
 }
 //end
